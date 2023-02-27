@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ipeer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <div class="container">
+      <input placeholder="Enter username..."
+              type="text"
+              id="username-input" /><br>
+      <button onclick="sendUsername()">Send</button><br>
+      <button onclick="startCall()">Start Call</button>
+    </div>
+    <div id="video-call-div">
+      <video muted id="local-video" autoplay></video>
+      <video id="remote-video" autoplay></video>
+      <div class="call-action-div">
+          <button onclick="muteVideo()">Mute Video</button>
+          <button onclick="muteAudio()">Mute Audio</button>
+      </div>
+  </div>
+  <script src="Host.js">Host.js</script>
+</body>
+
+</html>
